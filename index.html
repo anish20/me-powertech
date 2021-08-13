@@ -27,19 +27,21 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body data-spy="scroll" data-target=".navbar" data-offset="51">
+<body data-spy="scroll" data-target=".navbar" data-offset="51" onload="myFunction();" >
+    <div id="preloader" ></div>
     <!-- Navbar Start -->
     <nav class="navbar fixed-top shadow-sm navbar-expand-lg bg-dark navbar-dark py-1 py-lg-0 px-lg-5">
         <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="text-white text-uppercase m-0">M.P.E Powertech</h1>
+            <!-- <h1 class="text-white text-uppercase m-0">M.P.E Powertech</h1> -->
+            <img id="logo-image" src="img/logo23.png" />
         </a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav ml-auto py-0">
-                <a href="index.html" class="navbar-brand bg-primary px-4 mx-3 d-none d-lg-block">
-                    <h1 class="display-4 text-white text-uppercase m-0">M.P.E Powertech</h1>
+                <a href="index.html" class="navbar-brand  px-4 mx-3 d-none d-lg-block">
+                    <img id="logo-image" src="img/logo23.png" />
                 </a>
                 <a href="#home" class="nav-item nav-link active">Home</a>
                 <a href="#about" class="nav-item nav-link">About</a>
@@ -50,8 +52,9 @@
             </div>
 
             <div class="navbar-nav mr-auto py-0">
-                <a href="#testimonial" class="nav-item nav-link">Type of Work</a>
+                <a href="#typeofwork" class="nav-item nav-link">Type of Work</a>
                 <a href="#team" class="nav-item nav-link"> Profile</a>
+                <a href="#team" class="nav-item nav-link"> Clients</a>
                 
                 
             </div>
@@ -72,8 +75,8 @@
                                     title="Machenical Electrical PowerTech">M.P.E POWERTECH PRIVATE LIMITED</span> </h4>
                             <h3 class="display-2 font-secondary text-white mb-4">&ldquo; Working for the Customers with
                                 the Customers &rdquo;</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Send
-                                Enquiry</a>
+                            <!-- <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Send
+                                Enquiry</a> -->
                         </div>
                     </div>
                 </div>
@@ -85,8 +88,8 @@
                                     title="Machenical Electrical PowerTech">M.P.E POWERTECH PRIVATE LIMITED</span></h4>
                             <h3 class="display-2 font-secondary text-white mb-4">&ldquo; Working for the Customers with
                                 the Customers &rdquo;</h3>
-                            <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Send
-                                Enquiry</a>
+                            <!-- <a class="btn btn-light font-weight-bold py-3 px-5 mt-2 btn-scroll" href="#contact">Send
+                                Enquiry</a> -->
                         </div>
                     </div>
                 </div>
@@ -109,13 +112,13 @@
     <!-- About Start -->
     <div class="container-fluid py-5" id="about">
         <div class="container py-5">
-            <div class="row align-items-center">
+            <div class="row align-items-centers">
                 <div class="col-lg-5">
-                    <img class="img-fluid mb-4 mb-lg-0 " src="img/img4.jpg" alt="">
+                    <img class="img-fluid mb-4 mb-lg-0 " src="img/about.jpg" alt="">
                     <!-- <img class="img-fluid mb-4 mt-2" src="img/img1.jpg" alt=""> -->
                 </div>
                 <div class="col-lg-7">
-                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">About Us</h6>
+                    <h6 class="text-uppercase text-primary mb-3 font-weight-bold" style="letter-spacing: 3px;">About Us</h6>
                     <h1 class="display-6 about-head mb-3"><span class="text-primary">Experience</span> Quality & <span
                             class="text-success">Relibilty</span></h1>
                     <p>
@@ -140,7 +143,8 @@
                     <p>
                         We are recognized as &ldquo;A&rdquo; Class Govt. Licensed Electrical Contractor.
                     </p>
-
+                    <a class="btn btn-primary font-weight-bold p2-3 px-3 " id="btn-readmore" >Read More</a>
+                    <div id="readmore">
                     <h5 class="display-6 mb-3"><span class="text-primary">Our Strength</span> </h5>
                     <ul style="line-height: 33px;list-style-type: disclosure-closed;">
                         <li>Techincal competence</li>
@@ -168,6 +172,11 @@
 
 
                     </ul>
+                    <a class="btn btn-primary font-weight-bold p2-3 px-3 " id="btn-readless">Read Less</a>
+                   
+                    </div>
+                    
+
                     <!-- <a class="btn btn-primary font-weight-bold py-3 px-5 mt-2" type="button" data-toggle="modal" data-target="#exampleModalLong">Read More</a>
                  -->
 
@@ -180,13 +189,13 @@
     <!----Our strength open-->
     <div class="container-fluid py-5" id="our_strength">
         <div class="container py-5">
-            <div class="row align-items-center">
+            <div class="row align-items-centers">
                 <div class="col-lg-5">
-                    <img class="img-fluid mb-4 mt-2" src="img/img1.jpg" alt="">
+                    <img id="img-strength" class="img-fluid mb-4 mt-2" src="img/img1.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
 
-                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Our Strengths</h6>
+                    <h6 class="text-uppercase text-primary mb-3 font-weight-bold" style="letter-spacing: 3px;">Our Strengths</h6>
                     <p>
                         We are one of the best to provide specialized services for High master lighting design, supply,
                         erection,
@@ -206,6 +215,10 @@
                         <li>Wide network and communication channel</li>
                     </ul>
                     </p>
+                    <a class="btn btn-primary font-weight-bold p2-3 px-3 " id="btn-readmore1" >Read More</a>
+                    
+                    <div id="readmore1">
+                    
                     <p class="text-primary mb-3"> <b>Our Corporate Motto :</b></p> 
                     <p style="font-style: italic;">&ldquo;We regard quality as our lifeline,customer's,demand as our motive,keeping development and leading the market as our responsibility with customer satisfication as our ultimate goal.&rdquo;</p>   
                     <p class="text-primary mb-3"> <b>Why Us ? :</b>
@@ -218,6 +231,8 @@
                             <li>Supported by expert professionals</li>
                         </ul>
                     </p>
+                    <a class="btn btn-primary font-weight-bold p2-3 px-3 " id="btn-readless1">Read Less</a>
+                </div>
                 </div>
 
             </div>
@@ -228,13 +243,13 @@
     <!---Industries Open----->
     <div class="container-fluid py-5" id="industries">
         <div class="container py-5">
-            <div class="row align-items-center">
+            <div class="row align-items-centers">
                 <div class="col-lg-5">
-                    <img class="img-fluid mb-4 mt-2" src="img/img3.jpg" alt="">
+                    <img id="industry-img" class="img-fluid mb-4 mt-2" src="img/product-3.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
 
-                    <h6 class="text-uppercase text-primary mb-3" style="letter-spacing: 3px;">Industries</h6>
+                    <h6 class="text-uppercase text-primary mb-3 font-weight-bold" style="letter-spacing: 3px;">Industries</h6>
                         <ul style="line-height: 30px;list-style-type: disclosure-closed;">
                             <li>Thermal Power Projects</li>
                             <li>Hydro Power Projects</li>
@@ -250,7 +265,7 @@
                             <li>Gas Power Projects</li>
                             <li>Mining Projects</li>
                             <li>Aluminum Plants</li>
-                            <li>Fly Ash Work</li>
+                            <li>Fly <li>Ash Work</li>
                             <li>Electricity Distribution Boards</li>
                         </ul>
                     </p>
@@ -261,8 +276,94 @@
     </div>
     <!---Industry end--->
 
-  
+  <!---Type of work open--->
+  <div class="container-fluid py-5" id="typeofwork">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-12">
 
+                <h6 class="text-uppercase text-primary mb-3 text-align font-weight-bold" style="letter-spacing: 3px;">Type of work</h6>
+        
+                <p id="heading">Erection, Testing and Commissioning of Electrical Equipment -:</p>
+                <p>
+                    <ul  style="line-height: 30px;list-style-type: disclosure-closed;">
+                        <li> Electrical Works</li>
+                        <li>Ash Handling Plant Electrical Works</li>
+                        <li>BTG, BOP all Electrical Works to 660MW</li>
+                        <li>Plant Illumination Works</li>
+                        <li>AWRS Electrical Works</li>
+                        <li>Re-Circulating Water System Electrical Work</li>
+                        <li>Construction Power Network Works</li>
+                        <li>Ruler Electrification with 11/0.44 KV line & Sub Station</li>
+                        <li>IPDB, SPBD, Duct etc.</li>
+                        <li>Earthing Works</li>
+                        <li>Pole Works</li>
+                        <li>Cable Tray Works</li>
+                        <li>Lighting Arrester Works</li>
+                        <li>High Mask Lighting </li>
+                        <li>11Kv, 33Kv Line Erection and Supply of material.66</li>
+                        <li>132, 6.6,11,33 KV Sub-Station Works</li>
+                        <li>Hoist, Elevator Lift, EUI Crane Works</li>
+                        <li>ESP Electrical Works</li>
+                        <li>Switchyard Electrical Works</li>
+                        <li>Indoor & Outdoor Electrification</li>   
+                        <li>All kind of Electrical Testing and Commissioning</li>
+                    </ul>
+                </p>
+                <p id="heading">Erection, Testing and Commissioning of C&I (Control and Instrumentation) Equipment -:</p>
+                <p>
+                    <ul  style="line-height: 30px;list-style-type: disclosure-closed;">
+                        <li>C&I Panel Erection Testing and Commissioning</li>
+                        <li>PLC Work</li>
+                        <li>HMI Work</li>
+                        <li>Instrument Cable Laying and Termination</li>
+                        <li>Fiber optical Cable Laying</li>
+                        <li>Instruments Erection & Commissioning</li>
+                        <li>Automation Work</li>
+                        <li>LAN Network Work</li>
+                    </ul>
+                </p>
+                <p id="heading">Recto Fitting Works -:</p>
+                <p>
+                    <ul  style="line-height: 30px;list-style-type: disclosure-closed;">
+                        <li>HT, LT Panel Recto fitting Works</li>
+                        <li>400Kv Isolator Recto fitting Works</li>
+                        <li>400Kv Breaker Recto fitting Works</li>
+                        <li>Transformer, UAT, GT, ST, Power and Control Transformer Recto fitting Works</li>
+                        <li>Bus Duct, SPBD, and IPBD Recto fitting Works</li>
+
+                    </ul>    
+                </p>
+                <p id="heading">Men Power Supply Works -:</p>
+                <p>
+                    <ul  style="line-height: 30px;list-style-type: disclosure-closed;">
+                        <li>Skilled Men Power Supply</li>   
+                        <li>Un-Skilled Men Power Supply</li>
+                        <li>Semi Skilled Men Power Supply</li>
+                    </ul>
+                </p>
+                <p id="heading">Supply Works -:</p>
+                <p>
+                    <ul  style="line-height: 30px;list-style-type: disclosure-closed;">
+                        <li>Electrical Equipments Supply</li>   
+                        <li>General Order Supply</li>
+                                
+                    </ul>
+                </p>
+                <p id="heading">Maintenance Works / AMC Works -:</p>
+                <p>
+                    <ul  style="line-height: 30px;list-style-type: disclosure-closed;">
+                        <li>Electrical Equipments Supply</li>   
+                        <li>General Order Supply</li>
+                                
+                    </ul>
+                </p>
+            </div>
+
+        </div>
+    </div>
+</div>
+<!---Type of work end--->
     <!-- Gallery Start -->
     <!-- <div class="container-fluid bg-gallery" id="project" style="padding: 120px 0; margin: 90px 0;">
         <div class="section-title position-relative text-center" style="margin-bottom: 120px;">
@@ -555,7 +656,7 @@
     </div> -->
     <!-- Footer End -->
 
-
+   
     <!-- Modal -->
     <!-- <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
         aria-hidden="true">
@@ -623,6 +724,53 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    <script>
+         $(document).ready(()=>{
+              //btn readmore click
+          $("#readmore").hide();
+        $("#btn-readmore").click(()=>{
+            $("#readmore").fadeIn(2000);
+            $("#btn-readmore").hide();
+        })
+        //btn readless click
+        $("#btn-readless").click(()=>{
+            $("#readmore").fadeOut();
+            $("#btn-readmore").show();
+            
+        });
+
+             //btn readmore click1
+             $("#readmore1").hide();
+        $("#btn-readmore1").click(()=>{
+            $("#readmore1").fadeIn(2000);
+            $("#btn-readmore1").hide();
+        })
+        //btn readless click1
+        $("#btn-readless1").click(()=>{
+            $("#readmore1").fadeOut();
+            $("#btn-readmore1").show();
+            
+        });
+        
+         })
+
+
+    function myFunction(){
+      let loder=$("#preloader");
+      setTimeout(()=>{
+        loder.css("display","none");
+      },1000)
+    }
+    </script>
+    <script type="text/javascript" id="zsiqchat">
+    var $zoho=$zoho || {};$zoho.salesiq = $zoho.salesiq || 
+    {widgetcode: "e7710f1b5f1474735edffe1aaa7817142357dcfef381796b4d9184206dbbdf115ab80f7410814bb66dcfab9e779c3cdd",
+     values:{},ready:function(){}};
+     var d=document;s=d.createElement("script");s.type="text/javascript";s.id="zsiqscript";
+     setTimeout(()=>{
+        s.defer=true;s.src="https://salesiq.zoho.in/widget";t=d.getElementsByTagName("script")[0];t.parentNode.insertBefore(s,t);
+     },2000);
+     </script>
 </body>
 
 </html>
