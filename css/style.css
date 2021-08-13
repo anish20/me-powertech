@@ -9671,6 +9671,11 @@ h4, h5, h6 {
   .text-align{
     text-align: left !important;
   }
+
+  .slider-text{
+    font-size: 27px !important ;
+    text-align: center !important;
+  }
   
 }
 
